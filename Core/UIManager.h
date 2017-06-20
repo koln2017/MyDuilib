@@ -189,6 +189,8 @@ public:
     bool IsShowUpdateRect() const;
     void SetShowUpdateRect(bool show);
 
+	CShadowUI* GetShadow();
+
     static HINSTANCE GetInstance();
     static CDuiString GetInstancePath();
     static CDuiString GetCurrentPath();
@@ -335,6 +337,7 @@ private:
     HDC m_hDcBackground;
     HBITMAP m_hbmpOffscreen;
     HBITMAP m_hbmpBackground;
+	CShadowUI m_shadow;
     HWND m_hwndTooltip;
     TOOLINFO m_ToolTip;
     bool m_bShowUpdateRect;
