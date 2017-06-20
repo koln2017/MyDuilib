@@ -269,6 +269,7 @@ namespace DuiLib
 				m_uButtonState |= UISTATE_HOT;
 				Invalidate();
 			}
+			m_pManager->SendNotify(this, DUI_MSGTYPE_MOUSEENTER);
 			return;
 		}
 		if( event.Type == UIEVENT_MOUSELEAVE )
